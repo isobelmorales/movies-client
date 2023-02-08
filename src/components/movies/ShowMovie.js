@@ -36,7 +36,8 @@ const ShowMovie = (props) => {
                     <Card.Header>{ movie.fullTitle }</Card.Header>
                     <Card.Body>
                         <Card.Text>
-                            <div><small>Released: { movie.releaseDate }</small></div>
+                            <div><small>Rated: { movie.rating }</small></div>
+                            <div><small>{ movie.genre }</small></div>
                             <div><small>Length: { movie.length } mins</small></div>
                             <div><small>Watched? { movie.watched ? 'yes' : 'no' }</small></div>
                         </Card.Text>
