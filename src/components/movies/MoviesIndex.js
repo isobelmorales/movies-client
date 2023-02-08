@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card"
 import { Link } from "react-router-dom"
 import { getAllMovies } from "../../api/movies"
 import messages from "../shared/AutoDismissAlert/messages"
+import LoadingScreen from '../shared/LoadingScreen'
 
 const cardContainerStyle = {
     display: 'flex',
@@ -34,7 +35,7 @@ const MoviesIndex = (props) => {
     }
 
     if (!movies) {
-        return <p>...loading...please wait</p>
+        return <LoadingScreen />
     } else if (movies.length === 0) {
         return <p>No movies yet, go add some!</p>
     }
