@@ -28,3 +28,12 @@ export const createMovie = (user, newMovie) => {
 // Update (update a movie)
 
 // Delete (delete a movie)
+export const removeMovie = (user, movieId) => {
+    return axios({
+        url: `${apiUrl}/movies/${movieId}`,
+        method: 'DELETE',
+        headers: {
+            Authorization: `Token token=${user.token}`
+        }
+    })
+}

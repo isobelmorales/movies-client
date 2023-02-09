@@ -9,6 +9,8 @@ const messages = {
     getMoviesFailure: 'Failed to retrieve movies. Whoopsie',
     createMovieSuccess: 'New movie has been created!',
     createMovieFailure: 'Failed to create new movie, please try again.',
+    removeMovieSuccess: 'This movie has been successfully deleted.',
+    removeMovieFailure: 'Error! This movie has NOT been deleted. Please try again.'
 }
 
 module.exports = messages
