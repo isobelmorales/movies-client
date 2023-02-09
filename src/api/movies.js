@@ -12,6 +12,18 @@ export const getOneMovie = (id) => {
 }
 
 // Create (create a movie)
+export const createMovie = (user, newMovie) => {
+    console.log('this is the user', user)
+    console.log('this is the new movie', newMovie)
+    return axios({
+        url: `${apiUrl}/movies`,
+        method: 'POST',
+        headers: {
+            Authorization: `Token token=${user.token}`
+        },
+        data: { movie: newMovie }
+    })
+}
 
 // Update (update a movie)
 

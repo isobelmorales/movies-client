@@ -31,7 +31,7 @@ const ShowMovie = (props) => {
 
     return (
         <>
-            <Container>
+            <Container className="m-2">
                 <Card>
                     <Card.Header>{ movie.fullTitle }</Card.Header>
                     <Card.Body>

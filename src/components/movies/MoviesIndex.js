@@ -15,6 +15,8 @@ const MoviesIndex = (props) => {
     const [movies, setMovies] = useState(null)
     const [error, setError] = useState(false)
 
+    console.log('these are the movies in index', movies)
+
     const { msgAlert } = props
 
     useEffect(() => {
@@ -47,6 +49,11 @@ const MoviesIndex = (props) => {
                 <Card.Text>
                     <Link to={`/movies/${movie.id}`} className="btn btn-info">View { movie.name }</Link>
                 </Card.Text>
+                { movie.owner ?
+                <Card.Footer>
+                    owner: {movie.owner.email}
+                </Card.Footer>
+                : null }
             </Card.Body>
         </Card>
     ))

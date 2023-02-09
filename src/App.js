@@ -13,6 +13,7 @@ import SignIn from './components/auth/SignIn'
 import SignOut from './components/auth/SignOut'
 import ChangePassword from './components/auth/ChangePassword'
 import ShowMovie from './components/movies/ShowMovie'
+import CreateMovie from './components/movies/CreateMovie'
 
 const App = () => {
 
@@ -74,6 +75,13 @@ const App = () => {
                     element={
                         <ShowMovie user={user} msgAlert={msgAlert} />
                     }
+                />
+                <Route
+                    path='/create-movie'
+                    element={
+                    <RequireAuth user={user}>
+                        <CreateMovie msgAlert={msgAlert} user={user} />
+                    </RequireAuth>}
                 />
             </Routes>
             {msgAlerts.map((msgAlert) => (

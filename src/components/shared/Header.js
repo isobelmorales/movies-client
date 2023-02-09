@@ -9,8 +9,8 @@ const linkStyle = {
 const authenticatedOptions = (
 	<>
 		<Nav.Item className='m-2'>
-			<Link to='change-password' style={linkStyle}>
-				Change Password
+			<Link to='create-movie' style={linkStyle}>
+				Add New Movie
 			</Link>
 		</Nav.Item>
 		<Nav.Item className='m-2'>
@@ -44,9 +44,9 @@ const alwaysOptions = (
 
 const Header = ({ user }) => (
 	<Navbar bg='primary' variant='dark' expand='md'>
-		<Navbar.Brand>
+		<Navbar.Brand className="m-2">
             <Link to='/' style={linkStyle}>
-                react-auth-template
+                IMDB - Isobel's Movie DB 
             </Link>
         </Navbar.Brand>
 		<Navbar.Toggle aria-controls='basic-navbar-nav' />
