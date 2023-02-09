@@ -8,7 +8,7 @@ import LoadingScreen from '../shared/LoadingScreen'
 const ShowMovie = (props) => {
     const [movie, setMovie] = useState(null)
     const { id } = useParams()
-    const navigate = useNavigate
+    const navigate = useNavigate()
 
     const { user, msgAlert } = props
     console.log('user in ShowMovie props', user)
