@@ -32,7 +32,7 @@ const MovieForm = (props) => {
                 <Form.Group className="m-2">
                     <Form.Label>Rated:</Form.Label>
                     <Form.Control
-                        placeholder="G/PG/PG-13/R"
+                        placeholder="G/PG/PG-13/R/Unrated"
                         name="rating"
                         id="rating"
                         value={ movie.rating }

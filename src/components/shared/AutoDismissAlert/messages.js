@@ -7,7 +7,7 @@ const messages = {
 	changePasswordSuccess: 'Password changed successfully!',
 	changePasswordFailure:'Failed to change passwords. Check your old password and try again.',
     getMoviesFailure: 'Failed to retrieve movies. Whoopsie',
-    createMovieSuccess: 'New movie has been created! Yay!',
+    createMovieSuccess: 'New movie has been created!',
     createMovieFailure: 'Failed to create new movie, please try again.',
 }
 
