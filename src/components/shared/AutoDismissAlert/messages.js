@@ -10,7 +10,11 @@ const messages = {
     createMovieSuccess: 'New movie has been created!',
     createMovieFailure: 'Failed to create new movie, please try again.',
     removeMovieSuccess: 'This movie has been successfully deleted.',
-    removeMovieFailure: 'Error! This movie has NOT been deleted. Please try again.'
+    removeMovieFailure: 'Error! This movie has NOT been deleted. Please try again.',
+    updateMovieSuccess: 'Movie updated!',
+    updateMovieFailure: 'Movie NOT updated. Please try again.',
+    createActorSuccess: "Great! This actor has been added to the credits.",
+    createActorFailure: 'Actor has not been added. Please try again'
 }
 
 module.exports = messages
